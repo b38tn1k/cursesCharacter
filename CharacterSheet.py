@@ -7,7 +7,7 @@ class CharacterSheet(object):
     def __init__(self):
         self.bug = '>'
         self.nav_menu = ["Home", "Stats", "Weapons", "Combat", "Skills",  "Damage", "Notes","Benefits", "Gear", "Help","Armor", "Network", "Spells", "Companion", "Finance"]
-        self.help = [['Help', '', 0], ['Quit', 'q', 1], ['Nav Up', 'k', 1], ['Nav Down', 'j',1], ['Nav Left', 'h', 1], ['Nav Right', 'l', 1], ['Edit Item', 'i', 1], ['New Item', 'n', 1], ['Delete Item', 'x', 1], ['Save', 's', 1], ['Indent', 'tab', 1]]
+        self.help = [['Help', '', 0], ['Quit', 'q', 1], ['Nav Up', 'k', 1], ['Nav Down', 'j',1], ['Nav Left', 'h', 1], ['Nav Right', 'l', 1], ['Edit Item', 'i', 1], ['New Item', 'n', 1], ['Delete Item', 'x', 1], ['Save', 'w', 1], ['Indent', 'tab', 1]]
         self.load_character('character_sheet')
         self.base_user_input = ''
         self.screen = curses.initscr()
@@ -58,7 +58,7 @@ class CharacterSheet(object):
                 column = int(self.dims[1]/2) + 1
             if self.base_user_input == ord('h'):
                 column = 1
-            if self.base_user_input == ord('s'):
+            if self.base_user_input == ord('w'):
                 self.save_character('character_sheet')
             if self.base_user_input == ord('n'):
                 self.add_item(sub_menu, cursor, indentation)
@@ -158,12 +158,12 @@ class CharacterSheet(object):
         y = self.dims[0] - 4
         for j, nav_item in enumerate(self.nav_menu[:10]):
             if j < rows:
-                self.screen.addstr(y, x+space*j, '{!s}: {!s}'.format(j+1, nav_item.upper()))
+                self.screen.addstr(y, x+space*j, ' {!s}: {!s}'.format(j+1, nav_item.upper()))
             else:
                 if j == 9:
-                    self.screen.addstr(y+1, x+space*(j-rows), '0: {!s}'.format(nav_item.upper()))
+                    self.screen.addstr(y+1, x+space*(j-rows), ' 0: {!s}'.format(nav_item.upper()))
                 else:
-                    self.screen.addstr(y+1, x+space*(j-rows), '{!s}: {!s}'.format(j+1, nav_item.upper()))
+                    self.screen.addstr(y+1, x+space*(j-rows), ' {!s}: {!s}'.format(j+1, nav_item.upper()))
         y = self.dims[0] - 2
         for j, nav_item in enumerate(self.nav_menu[10:]):
             self.screen.addstr(y, x+space*j, '^{!s}: {!s}'.format(j+1, nav_item.upper()))
