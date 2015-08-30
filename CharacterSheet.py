@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 import curses
 import pickle
 
@@ -8,18 +7,9 @@ class CharacterSheet(object):
     def __init__(self):
         self.bug = '>'
         self.nav_menu = ["Home", "Stats", "Weapons", "Combat", "Skills",  "Damage", "Notes","Benefits", "Gear", "Help","Armor", "Network", "Spells", "Companion", "Finance"]
-        self.help = [['Help', '', 0], ['Quit', 'q', 1], ['Nav Up', 'k', 1], ['Nav Down', 'j',1], ['Nav Left', 'h', 1], ['Nav Right', 'l', 1], ['Edit Item', 'i', 1], ['New Item', 'n', 1], ['Delete Item', 'x', 1], ['Save', 's', 1]]
+        self.help = [['Help', '', 0], ['Quit', 'q', 1], ['Nav Up', 'k', 1], ['Nav Down', 'j',1], ['Nav Left', 'h', 1], ['Nav Right', 'l', 1], ['Edit Item', 'i', 1], ['New Item', 'n', 1], ['Delete Item', 'x', 1], ['Save', 's', 1], ['Indent', 'tab', 1]]
         self.load_character('character_sheet')
         self.base_user_input = ''
-        ## new ones
-        self.benefits = [['Benefits', '', 0]]
-        self.gear = [['Gear', '', 0]]
-        self.armor = [['Armor', '', 0]]
-        self.connections = [['Network', '', 0]]
-        self.spells = [['Spells', '', 0]]
-        self.companion = [['companion', '', 0]]
-        self.finance = [['Finance', '', 0]]
-
         self.screen = curses.initscr()
         self.dims = self.screen.getmaxyx()
         sub_menu= self.home
@@ -31,20 +21,6 @@ class CharacterSheet(object):
             self.base_user_input = self.screen.getch()
             self.base_user_input = self.base_user_input
             if self.base_user_input == ord('1'):
-                # self.base_user_input = self.screen.getch()
-                # if self.base_user_input == ord('0'):
-                #     sub_menu = self.gear
-                # elif self.base_user_input == ord('1'):
-                #     sub_menu = self.armor
-                # elif self.base_user_input == ord('2'):
-                #     sub_menu = self.connections  # should refactor but alread in db..
-                # elif self.base_user_input == ord('3'):
-                #     sub_menu = self.spells
-                # elif self.base_user_input == ord('4'):
-                #     sub_menu = self.companion
-                # elif self.base_user_input == ord('5'):
-                #     sub_menu = self.finance
-                # else:
                     sub_menu= self.home
             if self.base_user_input == ord('2'):
                 sub_menu= self.stats
