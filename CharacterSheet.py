@@ -5,7 +5,7 @@ import pickle
 
 class CharacterSheet(object):
     def __init__(self):
-        self.bug = '>'
+        self.bug = '*'
         self.nav_menu = ["Home", "Stats", "Weapons", "Combat", "Skills",  "Damage", "Notes","Benefits", "Gear", "Help","Armor", "Network", "Spells", "Companion", "Finance"]
         self.help = [['Help', '', 0], ['Quit', 'q', 1], ['Nav Up', 'k', 1], ['Nav Down', 'j',1], ['Nav Left', 'h', 1], ['Nav Right', 'l', 1], ['Edit Item', 'i', 1], ['New Item', 'n', 1], ['Delete Item', 'x', 1], ['Save', 'w', 1], ['Indent', 'tab', 1]]
         self.load_character('character_sheet')
@@ -35,9 +35,9 @@ class CharacterSheet(object):
             if self.base_user_input == ord('7'):
                 sub_menu = self.notes
             if self.base_user_input == ord('8'):
-                sub_menu = self.help
+                sub_menu = self.benefits
             if self.base_user_input == ord('9'):
-                sub_menu = self.help
+                sub_menu = self.gear
             if self.base_user_input == ord('0'):
                 sub_menu = self.help
             if self.base_user_input == ord('!'):
@@ -66,6 +66,7 @@ class CharacterSheet(object):
             if self.base_user_input == ord('x'):
                 self.remove_item(sub_menu, cursor)
             if self.base_user_input == ord('i'):
+                self.bug = '>'
                 self.edit_item(sub_menu, cursor, column)
             if self.base_user_input == ord('\t'):
                 indentation += 1
@@ -93,6 +94,7 @@ class CharacterSheet(object):
         self.screen.refresh()
 
     def edit_item(self, sub_menu, cursor, column):
+        self.screen.refresh()
         self.menu(sub_menu, cursor, column) # blocks i character
         y = cursor + 2
         if column == 1:
@@ -101,6 +103,7 @@ class CharacterSheet(object):
         else:
             x = int(3 + self.dims[1]/2)
             sub_menu[cursor][1] = self.get_input(sub_menu[cursor][1], y, x)
+        self.bug = '*'
         self.screen.refresh()
 
     def get_input(self, prompt_string, y, x):

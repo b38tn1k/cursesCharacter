@@ -8,78 +8,74 @@ aI0
 aa(lp4
 S'name'
 p5
-aS'Set Character Name'
+aS'Benson Streetwise Gamgee'
 p6
 aI1
 aa(lp7
 S'Sex'
 p8
-aS'Set Character Sex'
+aS'Male'
 p9
 aI1
 aa(lp10
-S'Defining Characteristics'
+S'Weight'
 p11
-aS'set defining characteristics'
+aS'60lbs'
 p12
 aI1
 aa(lp13
-S'Weight'
+S'height'
 p14
-aS'Set Character Weight'
+aS'34"'
 p15
 aI1
 aa(lp16
-S'height'
+S'Archetype'
 p17
-aS'Set Character Height'
+aS'Intellectual'
 p18
 aI1
 aa(lp19
-S'Archetype'
+S'race'
 p20
-aS'Set Character Archetype'
+aS'Gobber'
 p21
 aI1
 aa(lp22
-S'race'
+S'Careers'
 p23
-aS'Set Character Race'
+aS'Field Mechanik & Guttersnipe'
 p24
 aI1
 aa(lp25
-S'Careers'
+S'Faith'
 p26
-aS'Set Character Careers'
+aS'Atheist'
 p27
 aI1
 aa(lp28
-S'Faith'
+S'Languages'
 p29
-aS'set character faith'
+aS'Gobberish & Cygnaran'
 p30
 aI1
 aa(lp31
-S'Languages'
+S'feat points'
 p32
-ag3
+aS'3'
+p33
 aI1
-aa(lp33
-S'Player'
-p34
-aS'Set Character Player'
-p35
-aI1
-aa(lp36
+aa(lp34
 S'Level'
-p37
-aS'Set Level'
-p38
+p35
+aS'1'
+p36
 aI1
-aa(lp39
+aa(lp37
 S'total xp earned'
-p40
-ag3
+p38
+aS'0'
+p39
 aI1
 aa.(lp0
 (lp1
@@ -91,89 +87,59 @@ aI0
 aa(lp4
 S'PHY'
 p5
-ag3
+aS'4'
+p6
 aI1
-aa(lp6
-S'MAX'
-p7
-ag3
-aI1
-aa(lp8
+aa(lp7
 S'SPD'
+p8
+aS'6'
 p9
-ag3
 aI2
 aa(lp10
-g7
-ag3
-aI2
-aa(lp11
 S'STR'
+p11
+aS'3'
 p12
-ag3
 aI2
 aa(lp13
-g7
-ag3
-aI2
-aa(lp14
 S'AGI'
-p15
-ag3
+p14
+ag6
 aI1
-aa(lp16
-g7
-ag3
-aI1
-aa(lp17
+aa(lp15
 S'PRW'
-p18
-ag3
+p16
+aS'4'
+p17
 aI2
-aa(lp19
-g7
-ag3
-aI2
-aa(lp20
+aa(lp18
 S'POI'
-p21
-ag3
+p19
+aS'3'
+p20
 aI2
-aa(lp22
-g7
-ag3
-aI2
-aa(lp23
+aa(lp21
 S'INT'
-p24
-ag3
+p22
+ag20
 aI1
-aa(lp25
-g7
-ag3
-aI1
-aa(lp26
+aa(lp23
 S'ARC'
+p24
+aS'0'
+p25
+aI2
+aa(lp26
+S'PER'
 p27
-ag3
+ag20
 aI2
 aa(lp28
-g7
-ag3
-aI2
-aa(lp29
-S'PER'
-p30
-ag3
-aI2
-aa(lp31
-g7
-ag3
-aI2
-aa(lp32
 S'Willpower'
-p33
-ag3
+p29
+aS'7'
+p30
 aI1
 aa.(lp0
 (lp1
@@ -190,7 +156,7 @@ aI1
 aa(lp6
 S'Weapon One'
 p7
-aS'Set Weapon Name'
+aS'Repeating Pistol'
 p8
 aI2
 aa(lp9
@@ -201,85 +167,45 @@ aI3
 aa(lp11
 S'RNG'
 p12
-ag3
+aS'48'
+p13
 aI3
-aa(lp13
+aa(lp14
 S'RAT'
-p14
-ag3
-aI3
-aa(lp15
-S'POW'
+p15
+aS'7'
 p16
-ag3
 aI3
 aa(lp17
-S'Notes'
+S'POW'
 p18
-ag3
+aS'10'
+p19
 aI3
-aa(lp19
-S'Weapon Two'
-p20
-ag8
-aI2
-aa(lp21
-g10
+aa(lp20
+S'Melee Weapons'
+p21
 ag3
-aI3
+aI1
 aa(lp22
-g12
-ag3
-aI3
-aa(lp23
-g14
-ag3
-aI3
+g7
+aS'Small Dagger'
+p23
+aI2
 aa(lp24
-g16
-ag3
-aI3
-aa(lp25
-g18
+S'MAT'
+p25
 ag3
 aI3
 aa(lp26
-S'Melee Weapons'
+S'power'
 p27
-ag3
-aI1
-aa(lp28
-g7
-ag8
-aI2
+aS'1'
+p28
+aI3
 aa(lp29
-S'MAT'
-p30
-ag3
-aI3
-aa(lp31
 S'P+S'
-p32
-ag3
-aI3
-aa(lp33
-g18
-ag3
-aI3
-aa(lp34
-g20
-ag8
-aI2
-aa(lp35
-g30
-ag3
-aI3
-aa(lp36
-g32
-ag3
-aI3
-aa(lp37
-g18
+p30
 ag3
 aI3
 aa.(lp0
@@ -297,112 +223,101 @@ aI1
 aa(lp6
 S'spd stat'
 p7
-ag3
+aS'7'
+p8
 aI2
-aa(lp8
+aa(lp9
 S'agl stat'
-p9
-ag3
-aI2
-aa(lp10
-S'per stat'
+p10
+aS'4'
 p11
-ag3
 aI2
 aa(lp12
-S'racial modifier'
+S'per stat'
 p13
-ag3
+aS'3'
+p14
 aI2
-aa(lp14
-S'equipment modifier'
-p15
-ag3
-aI2
-aa(lp16
-S'total defence'
+aa(lp15
+S'racial modifier'
+p16
+aS'1'
 p17
-ag3
 aI2
 aa(lp18
-S'armor'
+S'equipment modifier'
 p19
-ag3
-aI1
-aa(lp20
-S'phy stat'
-p21
-ag3
+aS'-1'
+p20
 aI2
-aa(lp22
-S'shield mod'
+aa(lp21
+S'total defence'
+p22
+aS'14'
 p23
-ag3
 aI2
 aa(lp24
-S'armor mod'
+S'armor'
 p25
 ag3
-aI2
+aI1
 aa(lp26
-S'total armor'
+S'phy stat'
 p27
-ag3
+ag11
 aI2
 aa(lp28
-S'initiative'
+S'armor mod'
 p29
-ag3
-aI1
-aa(lp30
-S'spd stat'
-p31
-ag3
+aS'5'
+p30
 aI2
-aa(lp32
-S'pwr stat'
+aa(lp31
+S'total armor'
+p32
+aS'9'
 p33
-ag3
 aI2
 aa(lp34
-S'per stat'
+S'initiative'
 p35
 ag3
-aI2
+aI1
 aa(lp36
-S'equipment modifiers'
+S'spd stat'
 p37
-ag3
+ag8
 aI2
 aa(lp38
-S'total initiative'
+S'pwr stat'
 p39
-ag3
+ag11
 aI2
 aa(lp40
-S'command range'
+S'per stat'
 p41
+ag14
+aI2
+aa(lp42
+S'total initiative'
+p43
+aS'14'
+p44
+aI2
+aa(lp45
+S'command range'
+p46
 ag3
 aI1
-aa(lp42
+aa(lp47
 S'int stat'
-p43
-ag3
+p48
+ag14
 aI2
-aa(lp44
-S'command skill'
-p45
-ag3
-aI2
-aa(lp46
-S'ability mod'
-p47
-ag3
-aI2
-aa(lp48
+aa(lp49
 S'total cmd range'
-p49
-ag3
+p50
+ag14
 aI2
 aa.(lp0
 (lp1
@@ -411,6 +326,120 @@ p2
 aS''
 p3
 aI0
+aa(lp4
+S'Pistol'
+p5
+ag3
+aI1
+aa(lp6
+S'Skill level'
+p7
+aS'2'
+p8
+aI2
+aa(lp9
+S'total level'
+p10
+ag8
+aI2
+aa(lp11
+S'Detection'
+p12
+ag3
+aI1
+aa(lp13
+S'skill level'
+p14
+aS'1'
+p15
+aI2
+aa(lp16
+S'Total level'
+p17
+ag15
+aI2
+aa(lp18
+S'Sneak'
+p19
+ag3
+aI1
+aa(lp20
+S'parent value'
+p21
+aS'4'
+p22
+aI2
+aa(lp23
+S'skill level'
+p24
+ag15
+aI2
+aa(lp25
+S'total level'
+p26
+aS'5'
+p27
+aI2
+aa(lp28
+S'escape'
+p29
+ag3
+aI1
+aa(lp30
+S'skill level'
+p31
+ag15
+aI2
+aa(lp32
+S'total level'
+p33
+ag15
+aI2
+aa(lp34
+S'Metal Craft'
+p35
+ag3
+aI1
+aa(lp36
+S'skill level'
+p37
+ag15
+aI2
+aa(lp38
+S'total level'
+p39
+ag15
+aI2
+aa(lp40
+S'Mechanik Engineering'
+p41
+ag3
+aI1
+aa(lp42
+S'skill level'
+p43
+ag15
+aI2
+aa(lp44
+S'total level'
+p45
+ag15
+aI2
+aa(lp46
+S'streetwise'
+p47
+ag3
+aI1
+aa(lp48
+S'skill level'
+p49
+ag15
+aI2
+aa(lp50
+S'total level'
+p51
+ag15
+aI2
 aa.(lp0
 (lp1
 S'Damage'
@@ -418,6 +447,24 @@ p2
 aS''
 p3
 aI0
+aa(lp4
+S'agility'
+p5
+aS'1'
+p6
+aI1
+aa(lp7
+S'physique'
+p8
+aS'4'
+p9
+aI1
+aa(lp10
+S'intellect'
+p11
+aS'3'
+p12
+aI1
 aa.(lp0
 (lp1
 S'Notes'
@@ -425,6 +472,24 @@ p2
 aS''
 p3
 aI0
+aa(lp4
+S'Intellectual Page Ref'
+p5
+aS'115'
+p6
+aI1
+aa(lp7
+S'Gobber Page Ref'
+p8
+aS'110'
+p9
+aI1
+aa(lp10
+S'Field Mechanik Page Ref'
+p11
+aS'129'
+p12
+aI1
 aa.(lp0
 (lp1
 S'Benefits'
@@ -432,6 +497,61 @@ p2
 aS''
 p3
 aI0
+aa(lp4
+S'deft'
+p5
+ag3
+aI1
+aa(lp6
+S'attack mod'
+p7
+aS'+1'
+p8
+aI2
+aa(lp9
+S'damage Mod'
+p10
+aS'+1'
+p11
+aI2
+aa(lp12
+S'Photographic memory'
+p13
+ag3
+aI1
+aa(lp14
+S'jack marshall'
+p15
+aS'talks to jacks'
+p16
+aI1
+aa(lp17
+S'bodge'
+p18
+aS'Repair in combat'
+p19
+aI1
+aa(lp20
+S'hit the deck!'
+p21
+aS'no damage from aoi (goes prone)'
+p22
+aI1
+aa(lp23
+S'lost in a crowd'
+p24
+ag3
+aI1
+aa(lp25
+S'low breeding'
+p26
+ag3
+aI1
+aa(lp27
+S'perfect timing'
+p28
+ag3
+aI1
 aa.(lp0
 (lp1
 S'Gear'
@@ -439,6 +559,36 @@ p2
 aS''
 p3
 aI0
+aa(lp4
+S'stolen millitary coal'
+p5
+ag3
+aI1
+aa(lp6
+S'selling contra jack parts in city'
+p7
+ag3
+aI1
+aa(lp8
+S"mechanik's toolkit"
+p9
+ag3
+aI1
+aa(lp10
+S'light laborjack'
+p11
+ag3
+aI1
+aa(lp12
+S'punching spike'
+p13
+ag3
+aI2
+aa(lp14
+S'scattershot cannon'
+p15
+ag3
+aI2
 aa.(lp0
 (lp1
 S'Armor'
@@ -446,6 +596,11 @@ p2
 aS''
 p3
 aI0
+aa(lp4
+S'great armored coat'
+p5
+ag3
+aI1
 aa.(lp0
 (lp1
 S'Network'
@@ -453,6 +608,12 @@ p2
 aS''
 p3
 aI0
+aa(lp4
+S'black market'
+p5
+aS'selling contra jack parts to a guy'
+p6
+aI1
 aa.(lp0
 (lp1
 S'Spells'
@@ -467,6 +628,120 @@ p2
 aS''
 p3
 aI0
+aa(lp4
+S'Laborjack'
+p5
+aS'Hedges'
+p6
+aI1
+aa(lp7
+S'chassis type'
+p8
+aS'forager'
+p9
+aI2
+aa(lp10
+S'stats'
+p11
+ag3
+aI1
+aa(lp12
+S'phy'
+p13
+aS'7'
+p14
+aI2
+aa(lp15
+S'str'
+p16
+ag14
+aI2
+aa(lp17
+S'spd'
+p18
+aS'5'
+p19
+aI2
+aa(lp20
+S'agl'
+p21
+aS'4'
+p22
+aI2
+aa(lp23
+S'prw'
+p24
+ag22
+aI2
+aa(lp25
+S'poi'
+p26
+aS'2'
+p27
+aI2
+aa(lp28
+S'int'
+p29
+aS'1'
+p30
+aI2
+aa(lp31
+S'per'
+p32
+ag30
+aI2
+aa(lp33
+S'def'
+p34
+ag3
+aI1
+aa(lp35
+S'base'
+p36
+aS'10'
+p37
+aI2
+aa(lp38
+S'arm'
+p39
+ag3
+aI1
+aa(lp40
+S'base'
+p41
+aS'14'
+p42
+aI2
+aa(lp43
+S'ranged weapons'
+p44
+ag3
+aI1
+aa(lp45
+S'scattershot cannon'
+p46
+ag3
+aI2
+aa(lp47
+S'rat'
+p48
+ag27
+aI3
+aa(lp49
+S'melee weapons'
+p50
+ag3
+aI1
+aa(lp51
+S'punching spike'
+p52
+ag3
+aI2
+aa(lp53
+S'mat'
+p54
+ag22
+aI3
 aa.(lp0
 (lp1
 S'Finance'
@@ -474,4 +749,10 @@ p2
 aS''
 p3
 aI0
+aa(lp4
+S'GOLD'
+p5
+aS'40'
+p6
+aI1
 aa.
