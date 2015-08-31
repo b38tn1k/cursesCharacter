@@ -62,11 +62,11 @@ aI1
 aa(lp31
 S'feat points'
 p32
-aS'3'
+aS'2'
 p33
 aI1
 aa(lp34
-S'Level'
+S'level'
 p35
 aS'1'
 p36
@@ -162,51 +162,48 @@ aI2
 aa(lp9
 S'AMMO'
 p10
-ag3
+aS'1'
+p11
 aI3
-aa(lp11
+aa(lp12
 S'RNG'
-p12
-aS'48'
 p13
+aS'48'
+p14
 aI3
-aa(lp14
+aa(lp15
 S'RAT'
-p15
-aS'7'
 p16
+aS'7'
+p17
 aI3
-aa(lp17
+aa(lp18
 S'POW'
-p18
-aS'10'
 p19
+aS'10'
+p20
 aI3
-aa(lp20
+aa(lp21
 S'Melee Weapons'
-p21
+p22
 ag3
 aI1
-aa(lp22
+aa(lp23
 g7
 aS'Small Dagger'
-p23
+p24
 aI2
-aa(lp24
+aa(lp25
 S'MAT'
-p25
-ag3
-aI3
-aa(lp26
-S'power'
+p26
+aS'7'
 p27
-aS'1'
-p28
 aI3
-aa(lp29
+aa(lp28
 S'P+S'
+p29
+aS'5'
 p30
-ag3
 aI3
 aa.(lp0
 (lp1
@@ -319,6 +316,22 @@ S'total cmd range'
 p50
 ag14
 aI2
+aa(lp51
+S'combat history'
+p52
+ag3
+aI1
+aa(lp53
+S'kills'
+p54
+aS'1'
+p55
+aI2
+aa(lp56
+S'gervious harm'
+p57
+ag55
+aI2
 aa.(lp0
 (lp1
 S'Skills'
@@ -332,113 +345,149 @@ p5
 ag3
 aI1
 aa(lp6
-S'Skill level'
+S'parent value'
 p7
-aS'2'
+aS'4'
 p8
 aI2
 aa(lp9
-S'total level'
+S'Skill level'
 p10
-ag8
+aS'2'
+p11
 aI2
-aa(lp11
-S'Detection'
-p12
-ag3
-aI1
-aa(lp13
-S'skill level'
+aa(lp12
+S'total level'
+p13
+aS'6'
 p14
-aS'1'
-p15
 aI2
-aa(lp16
-S'Total level'
-p17
-ag15
-aI2
-aa(lp18
-S'Sneak'
+aa(lp15
+S'Hand Weapon'
+p16
+ag3
+aI1
+aa(lp17
+S'skill level'
+p18
+aS'2'
 p19
-ag3
-aI1
+aI2
 aa(lp20
-S'parent value'
+S'total level'
 p21
-aS'4'
-p22
+ag19
 aI2
-aa(lp23
-S'skill level'
-p24
-ag15
-aI2
-aa(lp25
-S'total level'
+aa(lp22
+S'Detection'
+p23
+ag3
+aI1
+aa(lp24
+S'Parent value'
+p25
+aS'3'
 p26
-aS'5'
-p27
 aI2
-aa(lp28
-S'escape'
+aa(lp27
+S'skill level'
+p28
+aS'1'
 p29
-ag3
-aI1
+aI2
 aa(lp30
-S'skill level'
+S'Total level'
 p31
-ag15
+aS'4'
+p32
 aI2
-aa(lp32
-S'total level'
-p33
-ag15
-aI2
-aa(lp34
-S'Metal Craft'
-p35
+aa(lp33
+S'Sneak'
+p34
 ag3
 aI1
-aa(lp36
-S'skill level'
+aa(lp35
+S'parent value'
+p36
+aS'4'
 p37
-ag15
 aI2
 aa(lp38
-S'total level'
+S'skill level'
 p39
-ag15
+ag29
 aI2
 aa(lp40
-S'Mechanik Engineering'
+S'total level'
 p41
+aS'5'
+p42
+aI2
+aa(lp43
+S'escape'
+p44
 ag3
 aI1
-aa(lp42
+aa(lp45
 S'skill level'
-p43
-ag15
+p46
+ag29
 aI2
-aa(lp44
+aa(lp47
 S'total level'
-p45
-ag15
+p48
+ag29
 aI2
-aa(lp46
+aa(lp49
+S'Metal Craft'
+p50
+ag3
+aI1
+aa(lp51
+S'parent'
+p52
+aS'3'
+p53
+aI2
+aa(lp54
+S'skill level'
+p55
+ag29
+aI2
+aa(lp56
+S'total level'
+p57
+ag8
+aI2
+aa(lp58
+S'Mechanik Engineering'
+p59
+ag3
+aI1
+aa(lp60
+S'skill level'
+p61
+ag29
+aI2
+aa(lp62
+S'total level'
+p63
+ag29
+aI2
+aa(lp64
 S'streetwise'
-p47
+p65
 ag3
 aI1
-aa(lp48
+aa(lp66
 S'skill level'
-p49
-ag15
+p67
+ag29
 aI2
-aa(lp50
+aa(lp68
 S'total level'
-p51
-ag15
+p69
+ag29
 aI2
 aa.(lp0
 (lp1
@@ -456,7 +505,7 @@ aI1
 aa(lp7
 S'physique'
 p8
-aS'4'
+aS'1'
 p9
 aI1
 aa(lp10
@@ -473,23 +522,38 @@ aS''
 p3
 aI0
 aa(lp4
-S'Intellectual Page Ref'
+S'page refs'
 p5
+ag3
+aI1
+aa(lp6
+S'intellectual page ref'
+p7
 aS'115'
-p6
-aI1
-aa(lp7
-S'Gobber Page Ref'
 p8
+aI2
+aa(lp9
+S'Gobber Page Ref'
+p10
 aS'110'
-p9
-aI1
-aa(lp10
-S'Field Mechanik Page Ref'
 p11
+aI2
+aa(lp12
+S'Field Mechanik Page Ref'
+p13
 aS'129'
-p12
+p14
+aI2
+aa(lp15
+S'History'
+p16
+ag3
 aI1
+aa(lp17
+S"pissed of rovers at five fingers cause of the 'last word'"
+p18
+ag3
+aI2
 aa.(lp0
 (lp1
 S'Benefits'
@@ -565,28 +629,69 @@ p5
 ag3
 aI1
 aa(lp6
-S'selling contra jack parts in city'
+S"mechanik's toolkit"
 p7
 ag3
 aI1
 aa(lp8
-S"mechanik's toolkit"
+S'10 page nudie mag'
 p9
 ag3
 aI1
 aa(lp10
-S'light laborjack'
+S'twine'
 p11
 ag3
 aI1
 aa(lp12
-S'punching spike'
+S'sardines'
 p13
 ag3
-aI2
+aI1
 aa(lp14
-S'scattershot cannon'
+S'book of matches'
 p15
+ag3
+aI1
+aa(lp16
+S'silver mug stolen from smek'
+p17
+ag3
+aI1
+aa(lp18
+S'empty coin bags'
+p19
+ag3
+aI1
+aa(lp20
+S'list of names smek owes money'
+p21
+ag3
+aI1
+aa(lp22
+S'inc smith boys'
+p23
+aS'smith burls & twin bridge blades'
+p24
+aI2
+aa(lp25
+S'some die (d6)'
+p26
+ag3
+aI1
+aa(lp27
+S'light laborjack'
+p28
+ag3
+aI1
+aa(lp29
+S'punching spike'
+p30
+ag3
+aI2
+aa(lp31
+S'scattershot cannon'
+p32
 ag3
 aI2
 aa.(lp0
@@ -614,6 +719,28 @@ p5
 aS'selling contra jack parts to a guy'
 p6
 aI1
+aa(lp7
+S'smek'
+p8
+aS'a gobber from five fingers'
+p9
+aI1
+aa(lp10
+S'reversed pick pokected us off boat'
+p11
+ag3
+aI2
+aa(lp12
+S'using us to fight the rovers for the bridge blades'
+p13
+ag3
+aI2
+aa(lp14
+S'gambler'
+p15
+aS'owes burls smith money'
+p16
+aI2
 aa.(lp0
 (lp1
 S'Spells'
@@ -752,7 +879,19 @@ aI0
 aa(lp4
 S'GOLD'
 p5
-aS'40'
+aS'39'
 p6
+aI1
+aa(lp7
+S'silver'
+p8
+aS'8'
+p9
+aI1
+aa(lp10
+S'coppers'
+p11
+aS'4'
+p12
 aI1
 aa.

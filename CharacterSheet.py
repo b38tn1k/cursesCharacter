@@ -199,9 +199,5 @@ class CharacterSheet(object):
                 self.save_character('character')
 
 
-while True:
-    try:
-        character = CharacterSheet()
-        character.show()
-    except ValueError:
-        character.screen.refresh()
+character = CharacterSheet()
+character.show()
