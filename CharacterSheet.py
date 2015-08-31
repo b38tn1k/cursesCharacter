@@ -154,7 +154,7 @@ class CharacterSheet(object):
         self.screen.clear()
         x = 2
         rows = 5
-        space = 15
+        space = self.dims[1]/5
         y = self.dims[0] - 4
         for j, nav_item in enumerate(self.nav_menu[:10]):
             if j < rows:
