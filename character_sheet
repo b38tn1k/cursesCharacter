@@ -328,9 +328,26 @@ aS'1'
 p55
 aI2
 aa(lp56
-S'gervious harm'
+S'grievious harm'
 p57
 ag55
+aI2
+aa(lp58
+S'Deft modifier'
+p59
+ag3
+aI1
+aa(lp60
+S'attack'
+p61
+aS'+1'
+p62
+aI2
+aa(lp63
+S'damage'
+p64
+aS'+1'
+p65
 aI2
 aa.(lp0
 (lp1
@@ -489,6 +506,29 @@ S'total level'
 p69
 ag29
 aI2
+aa(lp70
+S'disguise'
+p71
+ag3
+aI1
+aa(lp72
+S'skill level'
+p73
+aS'2'
+p74
+aI2
+aa(lp75
+S'plus intellect'
+p76
+aS'3'
+p77
+aI2
+aa(lp78
+S'total level'
+p79
+aS'5'
+p80
+aI2
 aa.(lp0
 (lp1
 S'Damage'
@@ -543,16 +583,6 @@ S'Field Mechanik Page Ref'
 p13
 aS'129'
 p14
-aI2
-aa(lp15
-S'History'
-p16
-ag3
-aI1
-aa(lp17
-S"pissed of rovers at five fingers cause of the 'last word'"
-p18
-ag3
 aI2
 aa.(lp0
 (lp1
@@ -719,7 +749,7 @@ aS''
 p3
 aI0
 aa(lp4
-S'black market'
+S'Black Market'
 p5
 aS'selling contra jack parts to a guy'
 p6
@@ -745,6 +775,46 @@ S'gambler'
 p15
 aS'owes burls smith money'
 p16
+aI2
+aa(lp17
+S'Riordan'
+p18
+aS'a high captain in five fingers'
+p19
+aI1
+aa(lp20
+S'five fingers high captain'
+p21
+aS'hates Killsbride'
+p22
+aI2
+aa(lp23
+S'rovers'
+p24
+aS'a gang in five fingers'
+p25
+aI1
+aa(lp26
+S'pissed off cause we have the last word pistol'
+p27
+ag3
+aI2
+aa(lp28
+S'bridge blades'
+p29
+aS'a gang in five fingers'
+p30
+aI1
+aa(lp31
+S'Captian killbridge'
+p32
+aS'High captain of five fingers'
+p33
+aI1
+aa(lp34
+S'tasked us with taking down bridge blades'
+p35
+ag3
 aI2
 aa.(lp0
 (lp1
@@ -860,19 +930,43 @@ p48
 ag27
 aI3
 aa(lp49
-S'melee weapons'
+S'ammo'
 p50
+aS'3'
+p51
+aI3
+aa(lp52
+S'pow'
+p53
+aS'12'
+p54
+aI3
+aa(lp55
+S'range'
+p56
+aS'sp6'
+p57
+aI3
+aa(lp58
+S'melee weapons'
+p59
 ag3
 aI1
-aa(lp51
+aa(lp60
 S'punching spike'
-p52
+p61
 ag3
 aI2
-aa(lp53
-S'mat'
-p54
+aa(lp62
+S'MAT'
+p63
 ag22
+aI3
+aa(lp64
+S'pow'
+p65
+aS'1'
+p66
 aI3
 aa.(lp0
 (lp1
