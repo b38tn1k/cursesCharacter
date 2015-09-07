@@ -114,6 +114,11 @@ class CharacterSheet(object):
 
     def save_character(self, file_name):
         # dumb
+        for facet in (self.home, self.stats, self.weapons, self.combat, self.skills, self.damage, self.notes, self.benefits, self.gear, self.armour, self.connections, self.spells, self.companion, self.finance):
+            for characteristic in facet:
+                for field in characteristic:
+                    if not field.isdigit():
+                        field = field.upper()
         file_object = open(file_name, 'wb')
         pickle.dump(self.home, file_object)
         pickle.dump(self.stats, file_object)
