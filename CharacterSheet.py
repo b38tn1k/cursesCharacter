@@ -50,6 +50,19 @@ class CharacterSheet(object):
                 sub_menu = self.companion
             if self.base_user_input == ord('%'):
                 sub_menu = self.finance
+            if self.base_user_input == ord(' '):
+                sub_menu = []
+                self.menu(sub_menu, cursor, column)
+                self.screen.addstr(1, 3, "ENTER SEARCH TERM:")
+                sub_menu.append(['RESULTS:', '', 0])
+                search_term = self.get_input([], 3, 3)
+                for facet in (self.home, self.stats, self.weapons, self.combat, self.skills, self.damage, self.notes, self.benefits, self.gear, self.armor, self.connections, self.spells, self.companion, self.finance):
+                    for characteristic in facet:
+                        for field in characteristic:
+                            if isinstance(field, str):
+                                if search_term.upper() in field.upper():
+                                    sub_menu.append(characteristic)
+                                    #  grab the characteristics and display them
             if self.base_user_input == ord('j'):
                 cursor += 1
             if self.base_user_input == ord('k'):
@@ -114,10 +127,10 @@ class CharacterSheet(object):
 
     def save_character(self, file_name):
         # dumb
-        for facet in (self.home, self.stats, self.weapons, self.combat, self.skills, self.damage, self.notes, self.benefits, self.gear, self.armour, self.connections, self.spells, self.companion, self.finance):
+        for facet in (self.home, self.stats, self.weapons, self.combat, self.skills, self.damage, self.notes, self.benefits, self.gear, self.armor, self.connections, self.spells, self.companion, self.finance):
             for characteristic in facet:
                 for field in characteristic:
-                    if not field.isdigit():
+                    if isinstance(field, str):
                         field = field.upper()
         file_object = open(file_name, 'wb')
         pickle.dump(self.home, file_object)
