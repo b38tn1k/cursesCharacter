@@ -7,7 +7,7 @@ class CharacterSheet(object):
     def __init__(self):
         self.bug = '*'
         self.nav_menu = ["Home", "Stats", "Weapons", "Combat", "Skills",  "Damage", "Notes","Benefits", "Gear", "Help","Armor", "Network", "Spells", "Companion", "Finance"]
-        self.help = [['Help', '', 0], ['Quit', 'q', 1], ['Nav Up', 'k', 1], ['Nav Down', 'j',1], ['Nav Left', 'h', 1], ['Nav Right', 'l', 1], ['Edit Item', 'i', 1], ['New Item', 'n', 1], ['Delete Item', 'x', 1], ['Save', 'w', 1], ['Indent', 'tab', 1]]
+        self.help = [['Help', '', 0], ['Quit', 'q', 1], ['Nav Up', 'k', 1], ['Nav Down', 'j',1], ['Nav Left', 'h', 1], ['Nav Right', 'l', 1], ['Edit Item', 'i', 1], ['New Item', 'n', 1], ['Delete Item', 'x', 1], ['Save', 'w', 1], ['Indent', 'tab', 1], ['Search', 'space', 1]]
         self.load_character('character_sheet')
         self.base_user_input = ''
         self.screen = curses.initscr()
@@ -56,11 +56,15 @@ class CharacterSheet(object):
                 self.screen.addstr(1, 3, "ENTER SEARCH TERM:")
                 sub_menu.append(['RESULTS:', '', 0])
                 search_term = self.get_input([], 3, 3)
-                for facet in (self.home, self.stats, self.weapons, self.combat, self.skills, self.damage, self.notes, self.benefits, self.gear, self.armor, self.connections, self.spells, self.companion, self.finance):
+                for facet in (self.home, self.stats, self.weapons, self.combat, self.skills, self.damage, self.notes, self.benefits, self.gear, self.armor, self.connections, self.spells, self.companion, self.finance): # mer
                     for characteristic in facet:
                         for field in characteristic:
                             if isinstance(field, str):
                                 if search_term.upper() in field.upper():
+                                    first_header = True
+                                    for header in reversed(facet):
+                                        if header[2] == 0:
+                                            sub_menu.append(header)
                                     sub_menu.append(characteristic)
                                     #  grab the characteristics and display them
             if self.base_user_input == ord('j'):
@@ -150,7 +154,6 @@ class CharacterSheet(object):
         file_object.close()
 
     def load_character(self, file_name):
-        # Load a Synapse for reuse
         file_object = open(file_name, 'r')
         self.home = pickle.load(file_object)
         self.stats = pickle.load(file_object)
@@ -218,4 +221,3 @@ class CharacterSheet(object):
 
 
 character = CharacterSheet()
-character.show()
