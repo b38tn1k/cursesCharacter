@@ -1,3 +1,5 @@
+A curses based character sheet for role playing games. I'm sorry
+
 ```
   HELP
 
